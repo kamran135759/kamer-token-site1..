@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10291f">
+<title>Kamer (KAM) | Official Token Website</title>
+<meta name="description" content="Official information website for Kamer (KAM), a BEP-20 token on BNB Smart Chain.">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f7f4;color:#17251d;line-height:1.7}
+header{background:#10291f;color:white;text-align:center;padding:35px 15px}
+.logo{width:85px;height:85px;border-radius:50%;background:#d9f5df;color:#12663a;display:grid;place-items:center;font-size:25px;font-weight:bold;margin:0 auto 12px;border:3px solid #8bc99b}
+header h1{margin:8px 0}
+header p{margin:5px 0;color:#dcebe0}
+main{max-width:760px;margin:24px auto;padding:0 14px}
+section{background:white;border:1px solid #dce8df;border-radius:14px;padding:20px;margin-bottom:16px;overflow-wrap:anywhere}
+h2{color:#176b3d;margin-top:0}
+.label{display:block;font-size:13px;color:#617166;margin-bottom:3px}
+.value{font-weight:bold}
+.address{font-size:13px;word-break:break-all}
+.button{display:inline-block;margin:8px 5px 4px 0;padding:10px 14px;background:#176b3d;color:white;text-decoration:none;border:0;border-radius:8px;font-weight:bold;cursor:pointer;font-size:14px}
+.secondary{background:#e4f2e8;color:#145a34}
+.notice{background:#fff8e8;border-color:#ead9ad}
+footer{text-align:center;padding:20px;color:#637168;font-size:13px}
+</style>
+</head>
+
+<body>
+<header>
+<div class="logo">KAM</div>
+<h1>Kamer (KAM)</h1>
+<p>Official Token Information Website</p>
+<p>BNB Smart Chain | BEP-20</p>
+</header>
+
+<main>
+<section>
+<h2>About Kamer</h2>
+<p>Kamer (KAM) is a token deployed on BNB Smart Chain. This website provides public project information and links to the token's blockchain records.</p>
+<p>Visitors can review contract information and available on-chain activity using the blockchain explorer.</p>
+</section>
+
+<section>
+<h2>Token Details</h2>
+<p><span class="label">Token Name</span><span class="value">Kamer</span></p>
+<p><span class="label">Token Symbol</span><span class="value">KAM</span></p>
+<p><span class="label">Network</span><span class="value">BNB Smart Chain Mainnet</span></p>
+<p><span class="label">Token Standard</span><span class="value">BEP-20</span></p>
+<p><span class="label">Contract Address</span></p>
+<div class="address" id="contract">0x063F28eA75Dae451cf070664f0EA2b46541eF872</div>
+<button class="button" type="button" onclick="copyAddress()">Copy Contract Address</button>
+<p>
+<a class="button" href="https://bscscan.com/token/0x063F28eA75Dae451cf070664f0EA2b46541eF872" target="_blank" rel="noopener noreferrer">View on BscScan</a>
+<a class="button secondary" href="https://bscscan.com/address/0x063F28eA75Dae451cf070664f0EA2b46541eF872#code" target="_blank" rel="noopener noreferrer">View Contract Source</a>
+</p>
+</section>
+
+<section>
+<h2>Trading Information</h2>
+<p>Trading availability, liquidity and market prices may change. Please check current information independently before trading.</p>
+<a class="button" href="https://pancakeswap.finance/" target="_blank" rel="noopener noreferrer">PancakeSwap</a>
+<a class="button secondary" href="https://dexscreener.com/bsc/0x063F28eA75Dae451cf070664f0EA2b46541eF872" target="_blank" rel="noopener noreferrer">View Market Data</a>
+</section>
+
+<section>
+<h2>Token Logo</h2>
+<p>The project logo can be published here after the image file is added to this website.</p>
+<a href="logo.png">View Token Logo (logo.png)</a>
+</section>
+
+<section class="notice">
+<h2>Important Notice</h2>
+<p>This website is for informational purposes only. No fixed price, investment return, redemption value or price stability is guaranteed.</p>
+<p>Always verify the contract address and assess the risks before interacting with a token or decentralized exchange.</p>
+<p>This website is not affiliated with or endorsed by BscScan, Binance or PancakeSwap.</p>
+</section>
+</main>
+
+<footer>Kamer (KAM) | Public Token Information</footer>
+
+<script>
+function copyAddress(){
+const address=document.getElementById("contract").innerText.trim();
+if(navigator.clipboard && window.isSecureContext){
+navigator.clipboard.writeText(address)
+.then(()=>alert("Contract address copied."))
+.catch(()=>prompt("Copy contract address:",address));
+}else{
+prompt("Copy contract address:",address);
+}
+}
+</script>
+</body>
+  </html>
+  
